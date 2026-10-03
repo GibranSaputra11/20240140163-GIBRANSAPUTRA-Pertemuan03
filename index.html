@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktikum CSS — PAW</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <h2>Jahit Bu Sari</h2>
+      <div class="menu">
+        <a href="#hero">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pesan">Pesan</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h1>Jasa Jahit Bu Sari</h1>
+      <p>Jahitan rapi dan harga terjangkau di Yogyakarta.</p>
+      <p><a href="#pesan" class="btn btn-primary">Lihat Layanan</a></p>
+    </section>
+
+    <section id="layanan">
+      <h2>Layanan Kami</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Gaun Pesta</h3>
+          <p>Jahit gaun pesta & kebaya.</p>
+        </article>
+
+        <article class="card">
+          <h3>Kemeja Batik</h3>
+          <p>Kemeja batik pria slim-fit.</p>
+        </article>
+
+        <article class="card">
+          <h3>Permak Pakaian</h3>
+          <p>Potong celana & permak baju.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <ul>
+        <li>Pengalaman lebih dari 15 tahun</li>
+        <li>Pengerjaan cepat 5–7 hari</li>
+        <li>Gratis revisi 1x</li>
+      </ul>
+    </section>
+
+    <section id="pesan">
+      <h2>Pesan Jahitan</h2>
+      <form class="order-form" action="#" method="post">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+        </div>
+
+        <div class="form-group">
+          <label for="layanan-select">Pilih Layanan</label>
+          <select id="layanan-select" name="layanan" required>
+            <option value="">-- Pilih Layanan --</option>
+            <option value="gaun">Gaun Pesta & Kebaya</option>
+            <option value="kemeja">Kemeja Batik</option>
+            <option value="permak">Permak Pakaian</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="catatan">Catatan / Detail Pesanan</label>
+          <textarea id="catatan" name="catatan" rows="4" placeholder="Jelaskan ukuran atau kebutuhan Anda"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container nav">
+      <p>&copy; 2026 Jahit Bu Sari</p>
+      <p><a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
